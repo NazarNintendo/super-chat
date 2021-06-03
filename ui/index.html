@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <title>Basic WebSocket</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+<h1>Chat</h1>
+<form id="login-form" class="pure-form">
+    <fieldset>
+        <legend>Leave the fields blank to login as <i>'tester - test'</i></legend>
+        <input name="username" type="text" placeholder="Username"/>
+        <input name="password" type="password" placeholder="Password"/>
+        <input name="guid" type="text" placeholder="GUID"/>
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+    <span class="login-info">
+    </span>
+</form>
+<button onclick="switchConnection()" class="pure-button pure-button-primary">Open/Close Connection</button>
+<div class="pure-g marginalized">
+    <div id="message-board" class="pure-u-1-2 msg-box ">
+
+    </div>
+    <div class="pure-u-1-2">
+        <form id="message-form" class="pure-form pure-form-aligned ">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="aligned-chat"></label>
+                    <textarea
+                            style="resize: none;"
+                            name="message"
+                            class="pure-input-1-2"
+                            rows="5"
+                            cols="10"
+                    ></textarea>
+                </div>
+                <div class="pure-controls">
+                    <button class="pure-button pure-button-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

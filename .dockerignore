@@ -1,0 +1,6 @@
+Dockerfile
+README.md
+.gitignore
+.gitlab-ci.yml
+werf.yaml
+hsp-chat
